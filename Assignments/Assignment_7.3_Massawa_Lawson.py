@@ -1,6 +1,6 @@
 init = raw_input('Enter Filename: ')
 if init is not None:
-	fhand=open('mbox-short.txt.txt')
+	fhand=open('mbox-short.txt')
 count=0
 spamAVG=0
 for line in fhand:

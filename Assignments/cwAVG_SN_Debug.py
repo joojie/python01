@@ -2,9 +2,9 @@ def centered_average(nums):
 	largest = None
 	smallest = None
 	for number in nums:
-		
 		if number > largest:
 			largest = float(number)
+			
 	for number in nums:
 		if smallest is None:
 			smallest = float(number)
@@ -13,10 +13,11 @@ def centered_average(nums):
 			
 	pos_lrg = nums.index(largest)
 	pos_sml = nums.index(smallest)
-    
+
 	nums.pop(pos_lrg)
 	nums.pop(pos_sml)
 	avg = sum(nums)/len(nums)
+	
 
 #What's messing me up now is when I run it. I get an Error saying "Pop index out of range" which don't make sense
 
