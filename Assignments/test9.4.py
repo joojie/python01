@@ -15,6 +15,6 @@ for line in fh:
 			count[email] = count[email] + 1
 		
 
-maximum = max(count, key=count.get)
-print (maximum, count[maximum])
-	
+#maximum = max(count, key=count.get)
+#print (maximum, count[max(count, key=count.get)])
+print max(count.items(), key=lambda k: k[1])	
