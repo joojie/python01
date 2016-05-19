@@ -18,7 +18,7 @@ Happy Coding,
 Tunisia'''
 
 def openFile():
-    fname = raw_input("Enter file name: ")
+    fname = raw_input("press enter: ")
     if len(fname) < 1 : fname = "mbox-short.txt"
     try:
         fh = open(fname, 'r')
@@ -28,7 +28,7 @@ def openFile():
     return fh
 
 def startsWith():
-    sw = raw_input("Enter line prefix to consider: ")
+    sw = raw_input("press enter: ")
     if len(sw) < 1 : sw = "From"
     return sw
 
